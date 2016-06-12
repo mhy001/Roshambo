@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		E90928061D0D05AA009AAF4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90928051D0D05AA009AAF4F /* AppDelegate.swift */; };
-		E90928081D0D05AA009AAF4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90928071D0D05AA009AAF4F /* ViewController.swift */; };
+		E90928081D0D05AA009AAF4F /* PlayGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90928071D0D05AA009AAF4F /* PlayGameViewController.swift */; };
 		E909280B1D0D05AA009AAF4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E90928091D0D05AA009AAF4F /* Main.storyboard */; };
 		E909280D1D0D05AA009AAF4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E909280C1D0D05AA009AAF4F /* Assets.xcassets */; };
 		E90928101D0D05AA009AAF4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E909280E1D0D05AA009AAF4F /* LaunchScreen.storyboard */; };
 		E909281B1D0D05AA009AAF4F /* RoshamboTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E909281A1D0D05AA009AAF4F /* RoshamboTests.swift */; };
 		E90928261D0D05AA009AAF4F /* RoshamboUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90928251D0D05AA009AAF4F /* RoshamboUITests.swift */; };
+		E90928341D0D0C3D009AAF4F /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90928331D0D0C3D009AAF4F /* ResultViewController.swift */; };
+		E944496E1D0DBB430013B0CA /* GameActionsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E944496D1D0DBB430013B0CA /* GameActionsEnum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		E90928021D0D05AA009AAF4F /* Roshambo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roshambo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E90928051D0D05AA009AAF4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E90928071D0D05AA009AAF4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E90928071D0D05AA009AAF4F /* PlayGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayGameViewController.swift; sourceTree = "<group>"; };
 		E909280A1D0D05AA009AAF4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E909280C1D0D05AA009AAF4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E909280F1D0D05AA009AAF4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		E90928211D0D05AA009AAF4F /* RoshamboUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoshamboUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E90928251D0D05AA009AAF4F /* RoshamboUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoshamboUITests.swift; sourceTree = "<group>"; };
 		E90928271D0D05AA009AAF4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E90928331D0D0C3D009AAF4F /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		E944496D1D0DBB430013B0CA /* GameActionsEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameActionsEnum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +102,13 @@
 			isa = PBXGroup;
 			children = (
 				E90928051D0D05AA009AAF4F /* AppDelegate.swift */,
-				E90928071D0D05AA009AAF4F /* ViewController.swift */,
+				E90928071D0D05AA009AAF4F /* PlayGameViewController.swift */,
 				E90928091D0D05AA009AAF4F /* Main.storyboard */,
 				E909280C1D0D05AA009AAF4F /* Assets.xcassets */,
 				E909280E1D0D05AA009AAF4F /* LaunchScreen.storyboard */,
 				E90928111D0D05AA009AAF4F /* Info.plist */,
+				E90928331D0D0C3D009AAF4F /* ResultViewController.swift */,
+				E944496D1D0DBB430013B0CA /* GameActionsEnum.swift */,
 			);
 			path = Roshambo;
 			sourceTree = "<group>";
@@ -259,8 +265,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E90928081D0D05AA009AAF4F /* ViewController.swift in Sources */,
+				E90928081D0D05AA009AAF4F /* PlayGameViewController.swift in Sources */,
 				E90928061D0D05AA009AAF4F /* AppDelegate.swift in Sources */,
+				E90928341D0D0C3D009AAF4F /* ResultViewController.swift in Sources */,
+				E944496E1D0DBB430013B0CA /* GameActionsEnum.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +495,7 @@
 				E909282C1D0D05AA009AAF4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E909282D1D0D05AA009AAF4F /* Build configuration list for PBXNativeTarget "RoshamboTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +504,7 @@
 				E909282F1D0D05AA009AAF4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E90928301D0D05AA009AAF4F /* Build configuration list for PBXNativeTarget "RoshamboUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +513,7 @@
 				E90928321D0D05AA009AAF4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
